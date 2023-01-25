@@ -1,0 +1,57 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
+        <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}"/></h1>
+    </header>
+    <div>
+        <table>
+            <tr>
+                <th>{{localize "fu.weapon.attackWith"}}</th>
+                <th>{{localize "fu.weapon.martialWeapon"}}</th>
+                <th>{{localize "fu.weapon.cost"}}</th>
+                <th>{{localize "fu.weapon.precision"}}</th>
+                <th>{{localize "fu.weapon.damage"}}</th>
+                <th>{{localize "fu.weapon.handRequired"}}</th>
+                <th>{{localize "fu.weapon.distanceType"}}</th>
+                <th>{{localize "fu.weapon.quality"}}</th>
+                <th>{{localize "fu.weapon.rarity"}}</th>
+            </tr>
+            <tr>
+                <td>
+                    <select name="data.attackWith"> 
+                        {{#select data.attackWith}}
+                        {{#each config.attackTypes as |name type|}}
+                        <option value="{{type}}">{{localize name}}</option>
+                        {{/each}}
+                        {{/select}}                       
+                    </select>
+                </td>
+                <td>
+                    <input name="data.martialWeapon" type="checkbox" value="{{data.martialWeapon}}" {{checked data.martialWeapon}} />
+                </td>
+                <td>
+                    <input name="data.cost" type="text" value="{{data.cost}}" placeholder="0" data-dtype="Number" />
+                </td>
+                <td>
+                    <input name="data.precision" type="text" value="{{data.precision}}" placeholder="0" data-dtype="Number" />
+                </td>
+                <td>
+                    <input name="data.damage" type="text" value="{{data.damage}}" placeholder="0" data-dtype="Number" />
+                </td>
+                <td>
+                    <input name="data.handRequired" type="text" value="{{data.handRequired}}" placeholder="0" data-dtype="Number" />
+                </td>
+                    <td>
+                        <input name="data.distanceType" type="text" value="{{data.distanceType}}" placeholder="{{ localize 'Name' }}" />
+                    </td>
+                    <td>
+                        <input name="data.quality" type="text" value="{{data.quality}}" placeholder="{{ localize 'Name' }}"/>
+                    </td>
+                    <td>
+                        <input name="data.rarity" type="text" value="{{data.rarity}}" placeholder="{{ localize 'Name' }}" />
+                    </td>
+                </tr>
+            </table>
+            <textarea name="data.description">{{data.description}}</textarea>        
+        </div>
+</form>

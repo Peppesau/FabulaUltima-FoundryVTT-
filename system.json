@@ -1,0 +1,34 @@
+{
+    "id": "fu",
+    "title": "Fabula Ultima",
+    "description": "A system for playing Fabula Ultima",
+    "version": "0.0.1",
+    "compatibility":{
+        "minimum": "10.291",
+        "verified": "10.291",
+        "maximum": "10.291"
+    },
+    "authors":[
+        {
+            "name": "Peppesau"
+        }
+    ],
+    "esmodules":[
+       "fu.js"
+    ],
+    "styles":[
+        
+    ],
+    "packs":[
+
+    ],    
+    "languages":[{
+        "lang": "en",
+        "name": "English",
+        "path": "lang/en.json"   
+    }],
+    "gridDistance": 5,
+    "gridUnits": "ft",
+    "primaryTokenAttribute": "hp",
+    "initiative": "des + int"
+}

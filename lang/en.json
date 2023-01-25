@@ -1,0 +1,27 @@
+{
+    "fu": {
+        "attack": {
+            "none": "",
+            "physical": "Physical",
+            "air": "Air",
+            "lightning": "Lightning",
+            "fire": "Fire",
+            "ice": "Ice",
+            "light": "Light",
+            "shadow": "Shadow",
+            "ground": "Ground",
+            "poison": "Poison"
+        },
+        "weapon":{
+            "attackWith": "guns",
+            "martialWeapon":false,
+            "cost":0,
+            "precision":0,
+            "damage":0,
+            "handRequired":0,
+            "distanceType":"melee",
+            "quality":"quality",
+            "rarity":"common"
+        }         
+    }    
+}

@@ -1,0 +1,60 @@
+{
+    "Actor":{},
+    "Item":{
+        "types":[
+            "weapon",
+            "accessories",
+            "armor",
+            "shield"
+        ],
+        "templates":{
+            "itemDescription":{
+                "description": "" 
+            }
+        },
+        "weapon":{
+            "templates":[
+                "itemDescription"
+            ],
+            "attackWith": "guns",
+            "martialWeapon":false,
+            "cost":0,
+            "precision":0,
+            "damage":0,
+            "handRequired":0,
+            "distanceType":"melee",
+            "quality":"quality",
+            "rarity":"common"
+        },
+        "accessories":{
+            "templates":[
+                "itemDescription"
+            ],
+            "cost": 0,
+            "quality": "quality"
+        },
+        "armor":{
+            "templates":[
+                "itemDescription"
+            ],
+            "martialArmor": false,
+            "cost": 0,
+            "defense": "0",
+            "magicDefense":"0",
+            "initiativeModifier":0,
+            "quality": "quality",
+            "rarity":"common"
+            
+        },
+        "shield":{
+            "templates":[
+                "itemDescription"
+            ],
+            "cost": 0,
+            "defense": 0,
+            "magicDefense":0,
+            "initiativeModifier":0,
+            "rarity": "common"   
+        }
+    }
+}
