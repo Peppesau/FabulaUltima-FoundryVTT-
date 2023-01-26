@@ -27,7 +27,7 @@
                     </select>
                 </td>
                 <td>
-                    <input name="data.martialWeapon" type="checkbox" value="{{data.martialWeapon}}" {{checked data.martialWeapon}} />
+                    <input name="data.martialWeapon" type="checkbox" {{checked data.martialWeapon}}  />
                 </td>
                 <td>
                     <input name="data.cost" type="text" value="{{data.cost}}" placeholder="0" data-dtype="Number" />
@@ -39,7 +39,7 @@
                     <input name="data.damage" type="text" value="{{data.damage}}" placeholder="0" data-dtype="Number" />
                 </td>
                 <td>
-                    <input name="data.handRequired" type="text" value="{{data.handRequired}}" placeholder="0" data-dtype="Number" />
+                    <input name="data.twoHandRequired" type="checkbox" {{checked data.twoHandRequired}} />
                 </td>
                 <td>
                     <input name="data.distanceType" type="text" value="{{data.distanceType}}" placeholder="{{ localize 'Name' }}" />
@@ -52,6 +52,6 @@
                 </td>
             </tr>
         </table>
-        {{editor content=data.description target="data.description" button=true owner=owner editable=editable}}        
+        {{editor data.description target="data.description" button=true owner=owner editable=editable}}       
     </div>
 </form>

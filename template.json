@@ -60,11 +60,11 @@
                 "itemDescription"
             ],
             "attackWith": "guns",
-            "martialWeapon":false,
+            "martialWeapon": false,
             "cost":0,
             "precision":0,
             "damage":0,
-            "handRequired":0,
+            "twoHandRequired":false,
             "distanceType":"melee",
             "quality":"quality",
             "rarity":"common"
