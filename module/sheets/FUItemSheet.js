@@ -3,11 +3,16 @@ export default class FUItemSheet extends ItemSheet {
         return `systems/FU/templates/sheets/${this.item.data.type}-sheet.html`;
     }
 
-    async getData(options) {
-        data = await super.getData(options);
-        
-        //data.data = this.document.data;       
-        data.config = CONFIG.fu;
-        return data;
+    getData() {
+        const baseData = super.getData(); 
+        let sheetData = {
+            owner: this.item.isOwner,
+            editable: this.isEditable,
+            item: baseData.item,
+            data: baseData.item.data.data,
+            config: CONFIG.fu
+        }
+
+        return sheetData;
     }
 }

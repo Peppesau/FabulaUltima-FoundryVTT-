@@ -1,5 +1,48 @@
 {
-    "Actor":{},
+    "Actor":{
+        "types":[
+            "Character",
+            "NPC",
+            "Enemy"
+        ],
+        "templates":{
+            "commonStats":{
+                "characteristics":{
+                    "dex":{
+                        "base":"",
+                        "current":""
+                    },
+                    "int":{
+                        "base":"",
+                        "current":""
+                    },
+                    "vig":{
+                        "base":"",
+                        "current":""
+                    },
+                    "wil":{
+                        "base":"",
+                        "current":""
+                    }       
+                },
+                "points":{
+                    "hp":{
+                        "max":0,
+                        "current":0
+                    },
+                    "mp":{
+                        "max":0,
+                        "current":0
+                    }    
+                },
+                "attributes":{
+                    "initiative":0,
+                    "defense":0,
+                    "magicDefense":0
+                }
+            }
+        }
+    },
     "Item":{
         "types":[
             "weapon",
